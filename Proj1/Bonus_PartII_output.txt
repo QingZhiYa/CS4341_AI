@@ -1,0 +1,306 @@
+Depth 1st search
+Expanded        Queue
+S        [<S > ]
+Expanded        Queue
+A        [<A S > <F S > <H S > ]
+Expanded        Queue
+I        [<I A S > <F S > <H S > ]
+Expanded        Queue
+L        [<L I A S > <F S > <H S > ]
+Expanded        Queue
+D        [<D L I A S > <K L I A S > <N L I A S > <F S > <H S > ]
+Expanded        Queue
+C        [<C D L I A S > <K L I A S > <N L I A S > <F S > <H S > ]
+Expanded        Queue
+B        [<B C D L I A S > <K L I A S > <N L I A S > <F S > <H S > ]
+Expanded        Queue
+F        [<F B C D L I A S > <M B C D L I A S > <K L I A S > <N L I A S > <F S > <H S > ]
+Expanded        Queue
+M        [<M B C D L I A S > <K L I A S > <N L I A S > <F S > <H S > ]
+Expanded        Queue
+K        [<K L I A S > <N L I A S > <F S > <H S > ]
+Expanded        Queue
+J        [<J K L I A S > <N L I A S > <F S > <H S > ]
+Expanded        Queue
+H        [<H J K L I A S > <N L I A S > <F S > <H S > ]
+Expanded        Queue
+N        [<N L I A S > <F S > <H S > ]
+Expanded        Queue
+G        [<G N L I A S > <F S > <H S > ]
+        goal reached!
+Solution found: S A I L N G
+
+Breadth 1st search
+Expanded        Queue
+S        [<S > ]
+Expanded        Queue
+A        [<A S > <F S > <H S > ]
+Expanded        Queue
+F        [<F S > <H S > <I A S > ]
+Expanded        Queue
+H        [<H S > <I A S > <B F S > ]
+Expanded        Queue
+I        [<I A S > <B F S > <J H S > ]
+Expanded        Queue
+B        [<B F S > <J H S > <L I A S > ]
+Expanded        Queue
+J        [<J H S > <L I A S > <C B F S > <M B F S > ]
+Expanded        Queue
+L        [<L I A S > <C B F S > <M B F S > <K J H S > ]
+Expanded        Queue
+C        [<C B F S > <M B F S > <K J H S > <D L I A S > <K L I A S > <N L I A S > ]
+Expanded        Queue
+M        [<M B F S > <K J H S > <D L I A S > <K L I A S > <N L I A S > <D C B F S > ]
+Expanded        Queue
+K        [<K J H S > <D L I A S > <K L I A S > <N L I A S > <D C B F S > ]
+Expanded        Queue
+D        [<D L I A S > <K L I A S > <N L I A S > <D C B F S > ]
+Expanded        Queue
+K        [<K L I A S > <N L I A S > <D C B F S > ]
+Expanded        Queue
+N        [<N L I A S > <D C B F S > ]
+Expanded        Queue
+D        [<D C B F S > <G N L I A S > ]
+Expanded        Queue
+G        [<G N L I A S > ]
+        goal reached!
+Solution found: S A I L N G
+
+Depth-limited search (depth-limit = 2)
+Expanded        Queue
+S        [<S > ]
+Expanded        Queue
+A        [<A S > <F S > <H S > ]
+Expanded        Queue
+I        [<I A S > <F S > <H S > ]
+Expanded        Queue
+F        [<F S > <H S > ]
+Expanded        Queue
+B        [<B F S > <H S > ]
+Expanded        Queue
+H        [<H S > ]
+Expanded        Queue
+J        [<J H S > ]
+failure to find path between S and G
+
+Iterative deepening search
+L =  0
+Expanded        Queue
+S        [<S > ]
+L =  1
+Expanded        Queue
+S        [<S > ]
+Expanded        Queue
+A        [<A S > <F S > <H S > ]
+Expanded        Queue
+F        [<F S > <H S > ]
+Expanded        Queue
+H        [<H S > ]
+L =  2
+Expanded        Queue
+S        [<S > ]
+Expanded        Queue
+A        [<A S > <F S > <H S > ]
+Expanded        Queue
+I        [<I A S > <F S > <H S > ]
+Expanded        Queue
+F        [<F S > <H S > ]
+Expanded        Queue
+B        [<B F S > <H S > ]
+Expanded        Queue
+H        [<H S > ]
+Expanded        Queue
+J        [<J H S > ]
+L =  3
+Expanded        Queue
+S        [<S > ]
+Expanded        Queue
+A        [<A S > <F S > <H S > ]
+Expanded        Queue
+I        [<I A S > <F S > <H S > ]
+Expanded        Queue
+L        [<L I A S > <F S > <H S > ]
+Expanded        Queue
+F        [<F S > <H S > ]
+Expanded        Queue
+B        [<B F S > <H S > ]
+Expanded        Queue
+C        [<C B F S > <M B F S > <H S > ]
+Expanded        Queue
+M        [<M B F S > <H S > ]
+Expanded        Queue
+H        [<H S > ]
+Expanded        Queue
+J        [<J H S > ]
+Expanded        Queue
+K        [<K J H S > ]
+L =  4
+Expanded        Queue
+S        [<S > ]
+Expanded        Queue
+A        [<A S > <F S > <H S > ]
+Expanded        Queue
+I        [<I A S > <F S > <H S > ]
+Expanded        Queue
+L        [<L I A S > <F S > <H S > ]
+Expanded        Queue
+D        [<D L I A S > <K L I A S > <N L I A S > <F S > <H S > ]
+Expanded        Queue
+K        [<K L I A S > <N L I A S > <F S > <H S > ]
+Expanded        Queue
+N        [<N L I A S > <F S > <H S > ]
+Expanded        Queue
+F        [<F S > <H S > ]
+Expanded        Queue
+B        [<B F S > <H S > ]
+Expanded        Queue
+C        [<C B F S > <M B F S > <H S > ]
+Expanded        Queue
+D        [<D C B F S > <M B F S > <H S > ]
+Expanded        Queue
+M        [<M B F S > <H S > ]
+Expanded        Queue
+H        [<H S > ]
+Expanded        Queue
+J        [<J H S > ]
+Expanded        Queue
+K        [<K J H S > ]
+L =  5
+Expanded        Queue
+S        [<S > ]
+Expanded        Queue
+A        [<A S > <F S > <H S > ]
+Expanded        Queue
+I        [<I A S > <F S > <H S > ]
+Expanded        Queue
+L        [<L I A S > <F S > <H S > ]
+Expanded        Queue
+D        [<D L I A S > <K L I A S > <N L I A S > <F S > <H S > ]
+Expanded        Queue
+C        [<C D L I A S > <K L I A S > <N L I A S > <F S > <H S > ]
+Expanded        Queue
+K        [<K L I A S > <N L I A S > <F S > <H S > ]
+Expanded        Queue
+J        [<J K L I A S > <N L I A S > <F S > <H S > ]
+Expanded        Queue
+N        [<N L I A S > <F S > <H S > ]
+Expanded        Queue
+G        [<G N L I A S > <F S > <H S > ]
+        goal reached!
+Solution found: S A I L N G
+
+Uniform Search (Branch-and-bound)
+Expanded        Queue
+S        [0.0<S > ]
+Expanded        Queue
+F        [1.0<F S > 2.0<A S > 3.0<H S > ]
+Expanded        Queue
+A        [2.0<A S > 3.0<B F S > 3.0<H S > ]
+Expanded        Queue
+B        [3.0<B F S > 3.0<H S > 4.0<I A S > ]
+Expanded        Queue
+H        [3.0<H S > 4.0<I A S > 4.0<M B F S > 5.0<C B F S > ]
+Expanded        Queue
+I        [4.0<I A S > 4.0<M B F S > 5.0<C B F S > 5.0<J H S > ]
+Expanded        Queue
+M        [4.0<M B F S > 5.0<C B F S > 5.0<J H S > 6.0<L I A S > ]
+Expanded        Queue
+C        [5.0<C B F S > 5.0<J H S > 6.0<L I A S > ]
+Expanded        Queue
+J        [5.0<J H S > 6.0<L I A S > 7.0<D C B F S > ]
+Expanded        Queue
+L        [6.0<L I A S > 7.0<D C B F S > 7.0<K J H S > ]
+Expanded        Queue
+D        [7.0<D C B F S > 7.0<D L I A S > 7.0<K J H S > 8.0<N L I A S > ]
+Expanded        Queue
+D        [7.0<D L I A S > 7.0<K J H S > 8.0<N L I A S > ]
+Expanded        Queue
+K        [7.0<K J H S > 8.0<N L I A S > ]
+Expanded        Queue
+N        [8.0<N L I A S > ]
+Expanded        Queue
+G        [10.0<G N L I A S > ]
+        goal reached!
+Solution found: S A I L N G
+
+Greedy Search
+Expanded        Queue
+S        [10.0<S > ]
+Expanded        Queue
+H        [1.0<H S > 2.0<A S > 3.0<F S > ]
+Expanded        Queue
+A        [2.0<A S > 3.0<F S > 7.0<J H S > ]
+Expanded        Queue
+F        [3.0<F S > 5.0<I A S > 7.0<J H S > ]
+Expanded        Queue
+I        [5.0<I A S > 7.0<J H S > 24.0<B F S > ]
+Expanded        Queue
+L        [2.0<L I A S > 7.0<J H S > 24.0<B F S > ]
+Expanded        Queue
+N        [1.0<N L I A S > 6.0<K L I A S > 7.0<J H S > 20.0<D L I A S > 24.0<B F S > ]
+Expanded        Queue
+G        [0<G N L I A S > 6.0<K L I A S > 7.0<J H S > 20.0<D L I A S > 24.0<B F S > ]
+        goal reached!
+Solution found: S A I L N G
+
+A*
+Expanded        Queue
+S        [10.0<S > ]
+Expanded        Queue
+A        [4.0<A S > 4.0<F S > 4.0<H S > ]
+Expanded        Queue
+F        [4.0<F S > 4.0<H S > 9.0<I A S > ]
+Expanded        Queue
+H        [4.0<H S > 9.0<I A S > 27.0<B F S > ]
+Expanded        Queue
+I        [9.0<I A S > 12.0<J H S > 27.0<B F S > ]
+Expanded        Queue
+L        [8.0<L I A S > 12.0<J H S > 27.0<B F S > ]
+Expanded        Queue
+N        [9.0<N L I A S > 12.0<J H S > 14.0<K L I A S > 27.0<B F S > 27.0<D L I A S > ]
+Expanded        Queue
+G        [10.0<G N L I A S > 12.0<J H S > 14.0<K L I A S > 27.0<B F S > 27.0<D L I A S > ]
+        goal reached!
+Solution found: S A I L N G
+
+Hill climbing without backtracking
+Expanded        Queue
+S        [10.0<S > ]
+Expanded        Queue
+H        [1.0<H S > ]
+Expanded        Queue
+J        [7.0<J H S > ]
+Expanded        Queue
+K        [6.0<K J H S > ]
+Expanded        Queue
+L        [2.0<L K J H S > ]
+Expanded        Queue
+N        [1.0<N L K J H S > ]
+Expanded        Queue
+G        [0<G N L K J H S > ]
+        goal reached!
+Solution found: S H J K L N G
+
+Beam search (w = 2)
+Expanded        Queue
+S        [10.0<S > ]
+Expanded        Queue
+A        [2.0<A S > 1.0<H S > ]
+Expanded        Queue
+H        [1.0<H S > 5.0<I A S > ]
+Expanded        Queue
+I        [5.0<I A S > 7.0<J H S > ]
+Expanded        Queue
+J        [7.0<J H S > 2.0<L I A S > ]
+Expanded        Queue
+L        [2.0<L I A S > 6.0<K J H S > ]
+Expanded        Queue
+K        [6.0<K J H S > 20.0<D L I A S > 6.0<K L I A S > 1.0<N L I A S > ]
+Expanded        Queue
+K        [6.0<K L I A S > 1.0<N L I A S > ]
+Expanded        Queue
+N        [1.0<N L I A S > ]
+Expanded        Queue
+G        [0<G N L I A S > ]
+        goal reached!
+Solution found: S A I L N G

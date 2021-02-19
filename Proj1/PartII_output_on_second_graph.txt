@@ -1,0 +1,186 @@
+Depth 1st search
+Expanded        Queue
+S        [<S > ]
+Expanded        Queue
+A        [<A S > <T S > <Z S > ]
+Expanded        Queue
+F        [<F A S > <O A S > <R A S > <T S > <Z S > ]
+Expanded        Queue
+G        [<G F A S > <O A S > <R A S > <T S > <Z S > ]
+        goal reached!
+Solution found: S A F G
+
+Breadth 1st search
+Expanded        Queue
+S        [<S > ]
+Expanded        Queue
+A        [<A S > <T S > <Z S > ]
+Expanded        Queue
+T        [<T S > <Z S > <F A S > <O A S > <R A S > ]
+Expanded        Queue
+Z        [<Z S > <F A S > <O A S > <R A S > <L T S > ]
+Expanded        Queue
+F        [<F A S > <O A S > <R A S > <L T S > <O Z S > ]
+Expanded        Queue
+O        [<O A S > <R A S > <L T S > <O Z S > <G F A S > ]
+Expanded        Queue
+R        [<R A S > <L T S > <O Z S > <G F A S > ]
+Expanded        Queue
+L        [<L T S > <O Z S > <G F A S > <C R A S > <P R A S > ]
+Expanded        Queue
+O        [<O Z S > <G F A S > <C R A S > <P R A S > <M L T S > ]
+Expanded        Queue
+G        [<G F A S > <C R A S > <P R A S > <M L T S > ]
+        goal reached!
+Solution found: S A F G
+
+Depth-limited search (depth-limit = 2)
+Expanded        Queue
+S        [<S > ]
+Expanded        Queue
+A        [<A S > <T S > <Z S > ]
+Expanded        Queue
+F        [<F A S > <O A S > <R A S > <T S > <Z S > ]
+Expanded        Queue
+O        [<O A S > <R A S > <T S > <Z S > ]
+Expanded        Queue
+R        [<R A S > <T S > <Z S > ]
+Expanded        Queue
+T        [<T S > <Z S > ]
+Expanded        Queue
+L        [<L T S > <Z S > ]
+Expanded        Queue
+Z        [<Z S > ]
+Expanded        Queue
+O        [<O Z S > ]
+failure to find path between S and G
+
+Iterative deepening search
+L =  0
+Expanded        Queue
+S        [<S > ]
+L =  1
+Expanded        Queue
+S        [<S > ]
+Expanded        Queue
+A        [<A S > <T S > <Z S > ]
+Expanded        Queue
+T        [<T S > <Z S > ]
+Expanded        Queue
+Z        [<Z S > ]
+L =  2
+Expanded        Queue
+S        [<S > ]
+Expanded        Queue
+A        [<A S > <T S > <Z S > ]
+Expanded        Queue
+F        [<F A S > <O A S > <R A S > <T S > <Z S > ]
+Expanded        Queue
+O        [<O A S > <R A S > <T S > <Z S > ]
+Expanded        Queue
+R        [<R A S > <T S > <Z S > ]
+Expanded        Queue
+T        [<T S > <Z S > ]
+Expanded        Queue
+L        [<L T S > <Z S > ]
+Expanded        Queue
+Z        [<Z S > ]
+Expanded        Queue
+O        [<O Z S > ]
+L =  3
+Expanded        Queue
+S        [<S > ]
+Expanded        Queue
+A        [<A S > <T S > <Z S > ]
+Expanded        Queue
+F        [<F A S > <O A S > <R A S > <T S > <Z S > ]
+Expanded        Queue
+G        [<G F A S > <O A S > <R A S > <T S > <Z S > ]
+        goal reached!
+Solution found: S A F G
+
+Uniform Search (Branch-and-bound)
+Expanded        Queue
+S        [0.0<S > ]
+Expanded        Queue
+Z        [75.0<Z S > 118.0<T S > 140.0<A S > ]
+Expanded        Queue
+T        [118.0<T S > 140.0<A S > 146.0<O Z S > ]
+Expanded        Queue
+A        [140.0<A S > 146.0<O Z S > 229.0<L T S > ]
+Expanded        Queue
+O        [146.0<O Z S > 220.0<R A S > 229.0<L T S > 239.0<F A S > ]
+Expanded        Queue
+R        [220.0<R A S > 229.0<L T S > 239.0<F A S > ]
+Expanded        Queue
+L        [229.0<L T S > 239.0<F A S > 317.0<P R A S > 366.0<C R A S > ]
+Expanded        Queue
+F        [239.0<F A S > 299.0<M L T S > 317.0<P R A S > 366.0<C R A S > ]
+Expanded        Queue
+M        [299.0<M L T S > 317.0<P R A S > 366.0<C R A S > 450.0<G F A S > ]
+Expanded        Queue
+P        [317.0<P R A S > 366.0<C R A S > 374.0<D M L T S > 450.0<G F A S > ]
+Expanded        Queue
+C        [366.0<C R A S > 374.0<D M L T S > 418.0<G P R A S > ]
+Expanded        Queue
+D        [374.0<D M L T S > 418.0<G P R A S > ]
+Expanded        Queue
+G        [418.0<G P R A S > ]
+        goal reached!
+Solution found: S A R P G
+
+Greedy Search
+Expanded        Queue
+S        [366.0<S > ]
+Expanded        Queue
+A        [253.0<A S > 329.0<T S > 374.0<Z S > ]
+Expanded        Queue
+F        [178.0<F A S > 193.0<R A S > 329.0<T S > 374.0<Z S > 380.0<O A S > ]
+Expanded        Queue
+G        [0<G F A S > 193.0<R A S > 329.0<T S > 374.0<Z S > 380.0<O A S > ]
+        goal reached!
+Solution found: S A F G
+
+A*
+Expanded        Queue
+S        [366.0<S > ]
+Expanded        Queue
+A        [393.0<A S > 447.0<T S > 449.0<Z S > ]
+Expanded        Queue
+R        [413.0<R A S > 417.0<F A S > 447.0<T S > 449.0<Z S > 671.0<O A S > ]
+Expanded        Queue
+P        [415.0<P R A S > 417.0<F A S > 447.0<T S > 449.0<Z S > 526.0<C R A S > 671.0<O A S > ]
+Expanded        Queue
+F        [417.0<F A S > 418.0<G P R A S > 447.0<T S > 449.0<Z S > 526.0<C R A S > 671.0<O A S > ]
+Expanded        Queue
+G        [418.0<G P R A S > 447.0<T S > 449.0<Z S > 526.0<C R A S > 671.0<O A S > ]
+        goal reached!
+Solution found: S A R P G
+
+Hill climbing without backtracking
+Expanded        Queue
+S        [366.0<S > ]
+Expanded        Queue
+A        [253.0<A S > ]
+Expanded        Queue
+F        [178.0<F A S > ]
+Expanded        Queue
+G        [0<G F A S > ]
+        goal reached!
+Solution found: S A F G
+
+Beam search (w = 2)
+Expanded        Queue
+S        [366.0<S > ]
+Expanded        Queue
+A        [253.0<A S > 329.0<T S > ]
+Expanded        Queue
+T        [329.0<T S > 178.0<F A S > 380.0<O A S > 193.0<R A S > ]
+Expanded        Queue
+F        [178.0<F A S > 193.0<R A S > ]
+Expanded        Queue
+R        [193.0<R A S > 0<G F A S > ]
+Expanded        Queue
+G        [0<G F A S > 98.0<P R A S > ]
+        goal reached!
+Solution found: S A F G
